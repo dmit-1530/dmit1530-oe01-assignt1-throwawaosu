@@ -190,6 +190,10 @@ li{
         width: 100%;
         align-items: center;
     }
+
+    .homeFourBoxTwo{
+        flex-direction: row-reverse;
+    }
     .homeFourText{
         width: 48%;
         margin: 1rem;
@@ -205,6 +209,18 @@ li{
 @media screen and (min-width:1200px){
     .homeTwoBox{
         width: 33%;
+    }
+    .homeFourBox{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .homeFourBigBox{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
     }
 
 
