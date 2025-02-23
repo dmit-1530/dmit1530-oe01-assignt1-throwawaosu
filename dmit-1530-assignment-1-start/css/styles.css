@@ -42,7 +42,7 @@ button{
 
 /* sections */
 
-section{
+section,footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -52,10 +52,8 @@ section{
 .one{
 
     background-color: var(--blue-grey-50);
-
     
 }
-
 
 
 .two{
@@ -144,11 +142,42 @@ li{
     margin-top: 1rem;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+    margin: 0rem 1rem;
+}
 
 .asterisk{
    font-size: 2.5rem; 
 }
 
+footer p{
+    color: var(--blue-grey-200);
+}
+footer .footerLinkBox p{
+    color: white;
+}
+
+footer .footerContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1040px;
+    width: 100%;
+}
+
+
+
+footer .footerContent nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    width: 100%;
+    
+}
 
 
 /* page exclusive and media queries */
@@ -175,7 +204,19 @@ li{
         text-align: center;
         align-items: center;
     }
+    footer .footerContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        max-width: 1040px;
+        width: 100%;
+    }
 
+
+    .contentHeader{
+        flex-direction: column;
+        justify-content: space-around;
+    }
 
 }
 
@@ -202,6 +243,20 @@ li{
         width: 48%;
     }
     
+    footer{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    footer .footerContent{
+        display: flex;
+        flex-direction: row;
+    }
+    footer .footerContent nav{
+        display: flex;
+        flex-direction: row;
+    }
+
 
 }
 
