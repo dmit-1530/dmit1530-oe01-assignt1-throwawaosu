@@ -213,7 +213,16 @@ footer .footerContent nav{
 figure{
     margin: 0;
 }
+.homeFourBigBox{
+    width: 100%;
+    max-width: 1040px;
+}
+.galleryFiveBigBox{
+    width: 100%;
+    max-width: 1040px;
+}
 
+/* small*/
 @media screen and (max-width:700px){
     .homeTwoBox{
         width: 100%;
@@ -236,9 +245,12 @@ figure{
     .galleryThreeBox{
         width: 100%;
     }
+
+
 }
 
 
+/* mid*/
 @media screen and (min-width:700px) and (max-width:1200px){
     .homeTwoBox{
         width: 50%;
@@ -290,9 +302,31 @@ figure{
     }
 
 
+    .galleryFiveBigBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .galleryFiveBigBox img{
+        width: 40%;
+       max-height: 860px;
+       object-fit: cover;
+    }
+    .galleryFiveBox{
+        margin-left: 1.5rem;
+        width: 57%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .galleryFiveBox img{
+        width: 100%;
+    }
+
 }
 
-
+/* big */
 @media screen and (min-width:1200px){
     .homeTwoBox{
         width: 33%;
@@ -306,6 +340,7 @@ figure{
     }
     .homeFourBigBox{
         width: 100%;
+        max-width: 1040px;
         display: flex;
         flex-direction: row;
     }
@@ -326,6 +361,27 @@ figure{
     }
     .galleryOneBox img{
         width: 48%;
+    }
+    .galleryFiveBigBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .galleryFiveBigBox img{
+        width: 25%;
+        height: auto;
+        object-fit: cover;
+    }
+    .galleryFiveBox{
+        margin-left: 1.5rem;
+        width: 73%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .galleryFiveBox img{
+        width: 100%;
     }
     
 
