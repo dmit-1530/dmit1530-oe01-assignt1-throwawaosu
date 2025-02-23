@@ -112,7 +112,7 @@ section,footer{
 
 }
 
-.contentTwo{
+.contentH{
     width: 100% -32px;
     max-width: 1040px;
     display: flex;
@@ -184,8 +184,10 @@ footer .footerContent nav{
 .homeImgOne{
     width: 100%;
 }
+
 .homeTwoBox,
-.homeFourBox{
+.homeFourBox,
+.galleryOneBox{
     text-align: left;
     align-items: baseline;
 }
@@ -194,8 +196,22 @@ footer .footerContent nav{
     margin-bottom: 0;
     margin-top: 0.75rem;
 }
-.homeFourBox{
+.homeFourBox,
+.galleryOneBox{
     margin-top: 3rem;
+}
+
+.galleryThreeBox{
+    width: 50%;
+}
+.galleryOneBox figure img{
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+
+}
+figure{
+    margin: 0;
 }
 
 @media screen and (max-width:700px){
@@ -217,7 +233,9 @@ footer .footerContent nav{
         flex-direction: column;
         justify-content: space-around;
     }
-
+    .galleryThreeBox{
+        width: 100%;
+    }
 }
 
 
@@ -225,22 +243,36 @@ footer .footerContent nav{
     .homeTwoBox{
         width: 50%;
     }
-    .homeFourBox{
+    .homeFourBox,
+    .galleryOneBox{
         display: flex;
         flex-direction: row;
         width: 100%;
         align-items: center;
     }
 
-    .homeFourBoxTwo{
+    .homeFourBoxTwo,
+    .galleryOneBoxTwo{
         flex-direction: row-reverse;
     }
-    .homeFourText{
+    .homeFourText,
+    .galleryOneText{
         width: 48%;
         margin: 1rem;
     }
+
     .homeFourBox img{
+        width: 45%;
+    }
+
+    .galleryOneBox img{
         width: 48%;
+    }
+
+    .galleryOneBox figure{
+        max-width: 200%;
+        width: 48%;
+        margin: 0;    
     }
     
     footer{
@@ -277,6 +309,25 @@ footer .footerContent nav{
         display: flex;
         flex-direction: row;
     }
+
+    .galleryOneBox{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+
+    .galleryOneBoxTwo{
+        flex-direction: row-reverse;
+    }
+    .galleryOneText{
+        width: 48%;
+        margin: 1rem;
+    }
+    .galleryOneBox img{
+        width: 48%;
+    }
+    
 
 
 }
