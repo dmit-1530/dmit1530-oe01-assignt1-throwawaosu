@@ -41,13 +41,18 @@ button{
 
 
 /* sections */
-.one{
+
+section{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 4rem 2rem;
+}
+.one{
+
     background-color: var(--blue-grey-50);
-    padding: 4rem 2rem;   
+
     
 }
 
@@ -56,17 +61,17 @@ button{
 .two{
     background-color: white;
     color: black;
-    padding: 64px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+
+
 
 
 }
 .three{
     background-color: #78909C;
     color: white;
+    
+
+
 }
 .four{
     background-color: var(--blue-grey-200);
@@ -129,7 +134,14 @@ h1{
 }
 
 h2{
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 2.25rem;
+}
+
+    
+li{
+    margin-top: 1rem;
 }
 
 
@@ -138,15 +150,24 @@ h2{
 }
 
 
+
 /* page exclusive and media queries */
 .homeImgOne{
     width: 100%;
 }
-.homeTwoBox{
+.homeTwoBox,
+.homeFourBox{
     text-align: left;
     align-items: baseline;
 }
 
+.homeThreeName{
+    margin-bottom: 0;
+    margin-top: 0.75rem;
+}
+.homeFourBox{
+    margin-top: 3rem;
+}
 
 @media screen and (max-width:700px){
     .homeTwoBox{
@@ -163,7 +184,20 @@ h2{
     .homeTwoBox{
         width: 50%;
     }
-
+    .homeFourBox{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+    .homeFourText{
+        width: 48%;
+        margin: 1rem;
+    }
+    .homeFourBox img{
+        width: 48%;
+    }
+    
 
 }
 
