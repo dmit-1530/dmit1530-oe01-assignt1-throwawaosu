@@ -11,19 +11,46 @@ body {
     font-family: "Inter";
 }
 
-header{
+header,footer{
     color: white;
     background-color: black;
 }
+
+/* sections */
 .one{
     background-color: var(--blue-grey-50);
     padding: 2rem 4rem;   
 }
+.two{
+    background-color: white;
+    color: black;
+}
+.three{
+    background-color: #78909C;
+    color: white;
+}
+.four{
+    background-color: var(--blue-grey-200);
+    color: black;
+}
+.five{
+    background-color: var(--blue-grey-900);
+    color: white;
+}
+.fivebox{
+    background-color: white;
+    color: black;
+    width: 500px;
+    /* PLACEHOLDER WIDTH */
+}
+
+
+/* sections end */
 
 h1,h2{
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 
-span{
+.asterisk{
    font-size: 40px; 
 }
