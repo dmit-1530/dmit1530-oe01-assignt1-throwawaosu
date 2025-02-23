@@ -16,14 +16,53 @@ header,footer{
     background-color: black;
 }
 
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+    
+}
+
+
+button{
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 1em;
+    border-radius: 0.5em;
+    max-width: 103px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+
+
 /* sections */
 .one{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--blue-grey-50);
-    padding: 2rem 4rem;   
+    padding: 4rem 2rem;   
+    
 }
+
+
+
 .two{
     background-color: white;
     color: black;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
 }
 .three{
     background-color: #78909C;
@@ -47,10 +86,92 @@ header,footer{
 
 /* sections end */
 
-h1,h2{
+
+
+
+.contentV{
+    width: 100% -32px;
+    max-width: 1040px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.contentHeader{
+    width: 100%;
+    max-width: 1040px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.contentTwo{
+    width: 100% -32px;
+    max-width: 1040px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+
+
+
+
+h1{
+    font-family: "Libre Baskerville";
+    font-size: 3.5rem;
+}
+
+h2{
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 
+
 .asterisk{
-   font-size: 40px; 
+   font-size: 2.5rem; 
+}
+
+
+/* page exclusive and media queries */
+.homeImgOne{
+    width: 100%;
+}
+.homeTwoBox{
+    text-align: left;
+    align-items: baseline;
+}
+
+
+@media screen and (max-width:700px){
+    .homeTwoBox{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+
+}
+
+
+@media screen and (min-width:700px) and (max-width:1200px){
+    .homeTwoBox{
+        width: 50%;
+    }
+
+
+}
+
+
+@media screen and (min-width:1200px){
+    .homeTwoBox{
+        width: 33%;
+    }
+
+
 }
