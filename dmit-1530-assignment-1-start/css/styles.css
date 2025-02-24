@@ -9,6 +9,7 @@ body {
     color: #000;
     text-align: center; 
     font-family: "Inter";
+
 }
 
 header,footer{
@@ -82,8 +83,8 @@ section,footer{
 .fivebox{
     background-color: white;
     color: black;
-    width: 500px;
-    /* PLACEHOLDER WIDTH */
+
+    max-width: 670px;
 }
 
 
@@ -93,7 +94,7 @@ section,footer{
 
 
 .contentV{
-    width: 100% -32px;
+
     max-width: 1040px;
     display: flex;
     flex-direction: column;
@@ -113,7 +114,7 @@ section,footer{
 }
 
 .contentH{
-    width: 100% -32px;
+
     max-width: 1040px;
     display: flex;
     flex-direction: row;
@@ -183,6 +184,7 @@ footer .footerContent nav{
 /* page exclusive and media queries */
 .homeImgOne{
     width: 100%;
+    max-width: 1040px;
 }
 
 .homeTwoBox,
@@ -224,6 +226,11 @@ figure{
 
 /* small*/
 @media screen and (max-width:700px){
+
+    .fivebox{
+        max-width: 1040px;
+        width: 90%;
+    }
     .homeTwoBox{
         width: 100%;
         text-align: center;
@@ -252,6 +259,9 @@ figure{
 
 /* mid*/
 @media screen and (min-width:700px) and (max-width:1200px){
+    .fivebox{
+        width: 60%;
+    }
     .homeTwoBox{
         width: 50%;
     }
@@ -328,6 +338,11 @@ figure{
 
 /* big */
 @media screen and (min-width:1200px){
+
+    .fivebox{
+        width: 100%;
+    }
+
     .homeTwoBox{
         width: 33%;
     }
@@ -379,6 +394,7 @@ figure{
         display: flex;
         flex-direction: column;
         text-align: left;
+
     }
     .galleryFiveBox img{
         width: 100%;
